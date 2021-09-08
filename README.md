@@ -9,7 +9,8 @@ In every move you can change the pixel(s) color, by changing the color you can i
 You have2 21 moves wto try and get the board to have the same color.
 Good luck! 
 
-# Impportant notes: 
+# Important notes: 
 1. In some IDE's the image only updates every second or third move, howeever in debugger modes this usually does not happen.
 
+![Game_examples](https://github.com/Eyal-Bahar/Game_of_color/blob/main/Picture1.png?raw=true)
 
