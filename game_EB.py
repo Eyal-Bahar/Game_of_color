@@ -86,7 +86,7 @@ class Game:
         # check if after update the game is complete
         self.find_neighbours_with_same_color_as_starting_point(self.starting_point[0], self.starting_point[1])
         checking_game_after_move = np.array(self.where_to_color)
-        if checking_game_after_move.size == (self.r * self.c):
+        if len(checking_game_after_move) == (self.r * self.c):
             self.complete = 1
 
     def find_neighbours_with_same_color_as_starting_point(self, pixel_s, pixel_t):
@@ -96,6 +96,7 @@ class Game:
             if self.board[s,t] == self.board[pixel_s,pixel_t] and [s,t] not in self.where_to_color:
                 self.where_to_color.append([s,t])
                 self.find_neighbours_with_same_color_as_starting_point(s, t)
+        self.where_to_color = [list(x) for x in set(tuple(x) for x in self.where_to_color)]
 
 
     def neighbours(self, x, y):
