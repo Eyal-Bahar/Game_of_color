@@ -76,7 +76,7 @@ class Game:
         """
         Take user input as letter, convert to number and then convert connected numbers to that number(color)
         """
-        user_input_int = int(self.color_code(input("Choose a color ['b','s','g','y'] : ")))
+        user_input_int = int(self.color_code(input("Choose a color ['y','r','g','b'] : ")))
         self.convert_connected_number(user_input_int)
 
     def convert_connected_number(self, user_input_int):
