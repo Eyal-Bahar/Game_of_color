@@ -10,7 +10,7 @@ You have2 21 moves wto try and get the board to have the same color.
 Good luck! 
 
 # Important notes: 
-1. In some IDE's the image only updates every second or third move, howeever in debugger modes this usually does not happen.
+1. In some IDE's the image only updates every second or third move, however in debugger modes this usually does not happen.
 
 ![Game_examples](https://github.com/Eyal-Bahar/Game_of_color/blob/main/Picture1.png?raw=true)
 
